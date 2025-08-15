@@ -2,3 +2,4 @@
 CI: teste
 
 Proteção de branch: teste
+Proteção ok
