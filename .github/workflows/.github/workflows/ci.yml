@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, principal ]
+  pull_request:
+    branches: [ main, principal ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
+
+      - name: Basic sanity check
+        run: echo "CI rodando com sucesso ✅"
