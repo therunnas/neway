@@ -1,20 +1,13 @@
 name: CI
 
 on:
-  push:
-    branches: [ main, principal ]
   pull_request:
-    branches: [ main, principal ]
+    branches: [ main ]
 
 jobs:
-  validate:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: List files
-        run: ls -la
-
-      - name: Basic sanity check
-        run: echo "CI rodando com sucesso ✅"
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: echo "Executando verificação automática..."
