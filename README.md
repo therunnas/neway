@@ -32,3 +32,4 @@ Organizar a base do projeto e definir o fluxo de contribuição.
 1. `git checkout -b feat/sua-feature`
 2. Commits claros (Conventional Commits)
 3. Abra um PR para `main`
+- Pequena atualização: Fri Aug 15 11:36:13     2025
